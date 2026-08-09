@@ -4,7 +4,7 @@ import './Home.css';
 
 const Home = () => {
   const heroImages = [
-    "https://greencitybiotech.com/wp-content/uploads/2025/06/Grey-and-Green-Modern-Minimalist-Garden-Services-Banner.jpg",
+    "/uploads/2025/06/Grey-and-Green-Modern-Minimalist-Garden-Services-Banner.jpg",
     "/uploads/2025/05/image-1.jpg"
   ];
 

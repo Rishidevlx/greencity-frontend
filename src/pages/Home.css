@@ -178,7 +178,7 @@
 /* 4. Parallax Expert Banner */
 .expert-parallax {
   position: relative;
-  background-image: url('https://greencitybiotech.com/wp-content/uploads/2025/05/image-1.jpg');
+  background-image: url('/uploads/2025/05/image-1.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -781,11 +781,30 @@
   font-size: 14px;
 }
 
+
 @media (max-width: 768px) {
   .events-title {
     font-size: 40px;
   }
-  .events-grid {
-    grid-template-columns: 1fr;
+  .events-grid,
+  .about-grid,
+  .features-grid,
+  .process-grid,
+  .stats-grid,
+  .mission-grid,
+  .products-grid,
+  .services-grid,
+  .projects-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+  .gradient-heading-box h2 {
+    font-size: 24px;
+  }
+  .large-title {
+    font-size: 40px !important;
+  }
+  .about-section, .features-section, .process-section, .stats-section, .mission-section {
+    padding: 40px 15px !important;
   }
 }

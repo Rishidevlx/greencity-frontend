@@ -93,3 +93,29 @@
   margin-bottom: 20px;
   letter-spacing: 1px;
 }
+
+/* Responsive Media Queries */
+@media (max-width: 992px) {
+  .contact-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-header h1 {
+    font-size: 2rem;
+  }
+  .gradient-bar h2 {
+    font-size: 1.2rem;
+  }
+  .contact-info-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .office-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+}

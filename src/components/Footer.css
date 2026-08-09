@@ -79,3 +79,18 @@
   text-transform: uppercase;
   text-decoration: none;
 }
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+  .footer-social {
+    justify-content: center;
+  }
+  .footer-copyright {
+    padding: 15px 20px;
+  }
+}
