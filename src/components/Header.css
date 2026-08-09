@@ -1,0 +1,149 @@
+/* Header Specific Styles - Cloned from WP PageLayer */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;500;600&family=Quicksand:wght@500;600;700&display=swap');
+
+.site-header {
+  background-color: #ffffff;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  position: relative;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Logo */
+.header-logo {
+  flex: 0 0 30%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-family: 'Fraunces', serif;
+  font-size: 24px;
+  color: rgba(9, 127, 90, 0.98);
+  font-weight: 600;
+}
+
+/* Navigation Menu */
+.header-nav {
+  flex: 0 0 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-menu > li {
+  position: relative;
+  padding: 5px 14px;
+}
+
+.nav-menu > li > a {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px; /* Matched WP 16px */
+  font-weight: 600;
+  color: #5c7e91;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-menu > li > a:hover,
+.nav-menu > li > a.active {
+  color: rgba(9, 127, 90, 0.98);
+}
+
+/* Dropdown Styles */
+.has-dropdown .sub-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #309607;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  min-width: 220px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.has-dropdown:hover .sub-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sub-menu li a {
+  display: block;
+  padding: 10px 20px;
+  color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background 0.3s;
+}
+
+.sub-menu li a:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
+/* Header Button */
+.header-action {
+  flex: 0 0 20%;
+  text-align: right;
+}
+
+.header-btn {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #82cc00;
+  color: #ffffff;
+  padding: 10px 25px;
+  border-radius: 25px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.4s;
+  display: inline-block;
+}
+
+.header-btn:hover {
+  opacity: 0.9;
+  box-shadow: 0 4px 10px rgba(130, 204, 0, 0.4);
+}

@@ -1,0 +1,137 @@
+.services-page {
+  background-color: #f2fae8; /* Light green background similar to screenshots */
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+
+.services-header {
+  padding-top: 40px;
+}
+
+/* What We Do Section */
+.what-we-do-section {
+  padding: 60px 20px 40px;
+}
+
+.section-subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.section-subtitle h4 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a2900;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.section-subtitle .line {
+  width: 40px;
+  height: 2px;
+  background-color: #82cc00;
+}
+
+.section-main-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #82cc00;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.section-main-title .ampersand {
+  font-weight: 300;
+  font-size: 46px;
+}
+
+/* Services Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.service-img-wrapper {
+  width: 100%;
+  height: 200px; /* fixed height for images */
+  overflow: hidden;
+}
+
+.service-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.service-card:hover .service-img-wrapper img {
+  transform: scale(1.1);
+}
+
+.service-card-title {
+  padding: 25px 15px;
+  text-align: center;
+}
+
+.service-card-title h3 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a2900;
+  margin: 0;
+}
+
+/* Advertisement */
+.services-advertisement {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: 50px auto 0;
+}
+
+.advertisement-poster {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .section-main-title {
+    font-size: 28px;
+  }
+  .section-main-title .ampersand {
+    font-size: 32px;
+  }
+  .services-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+}

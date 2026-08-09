@@ -1,0 +1,81 @@
+/* Footer Specific Styles - Cloned from WP PageLayer */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&family=Quicksand:wght@700&display=swap');
+
+.site-footer {
+  background-color: #005F0A; /* Exact green from user */
+  padding-top: 50px;
+  position: relative;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  gap: 40px;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-heading h2 {
+  color: #ffffff;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 26px; /* Matched WP exact */
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.3em;
+  margin-bottom: 20px;
+}
+
+.footer-subheading h5 {
+  color: #f3f7f5;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.footer-text p, .footer-text h5 {
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px; /* Matched WP exact from inspector */
+  color: #F9FAFB;
+  margin-bottom: 15px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.footer-social {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.social-icon {
+  color: #ffffff;
+  font-size: 25px;
+  transition: color 0.4s;
+}
+
+.social-icon:hover {
+  color: #82cc00; /* Light Green hover */
+}
+
+/* Copyright section */
+.footer-copyright {
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 30px;
+}
+
+.footer-copyright a {
+  color: #005a11;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}

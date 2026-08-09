@@ -1,0 +1,103 @@
+.products-page {
+  background-color: #f2fae8; /* Light green background similar to services page */
+  min-height: 100vh;
+  padding: 60px 20px;
+}
+.products-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  font-weight: 300;
+  color: #82cc00;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+.products-title span {
+  font-weight: 700;
+}
+
+.products-grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto 30px;
+}
+.products-grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 50px;
+}
+.product-card {
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.product-img-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+.product-img-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+.product-card:hover .product-img-wrapper img {
+  transform: scale(1.05);
+}
+.product-content {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.product-content h3 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a2900;
+  margin-bottom: 15px;
+}
+.product-content p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: #5d5d5d;
+  line-height: 1.6;
+  margin: 0;
+}
+.view-all-wrapper {
+  text-align: center;
+}
+.view-all-btn {
+  display: inline-block;
+  background-color: transparent;
+  color: #82cc00;
+  border: 2px solid #82cc00;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.view-all-btn:hover {
+  background-color: #82cc00;
+  color: #fff;
+}
+@media (max-width: 992px) {
+
+  .products-grid-3, .products-grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+ 
+  .products-grid-3, .products-grid-4 {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+}

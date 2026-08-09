@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+:root {
+  /* Exact Colors extracted from WP Live Site & Screenshot */
+  --wp-green-dark: #006400; /* Dark Green Footer/Bar */
+  --wp-green-gradient-light: #87dfae; /* Gradient center */
+  --wp-blue-gradient-light: #a2d9eb; /* Gradient edges */
+  --wp-purple-icon: #9b59b6; /* Contact Icons */
+  
+  /* Base Colors */
+  --text-primary: #000000;
+  --text-secondary: #222222;
+  --text-light: #ffffff;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  
+  /* Fonts */
+  --font-primary: 'Montserrat', sans-serif;
+  --font-secondary: 'Roboto', sans-serif;
+  
+  /* Global Settings */
+  --container-width: 1200px;
+  --transition-speed: 0.3s ease-in-out;
+}
+
+/* CSS Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-primary);
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all var(--transition-speed);
+}
+
+ul, ol {
+  list-style: none;
+}
+
+/* Global Container */
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Reusable Components */
+.gradient-text {
+  background: linear-gradient(90deg, var(--wp-blue-gradient-light) 0%, var(--wp-green-gradient-light) 50%, var(--wp-blue-gradient-light) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gradient-bg {
+  background: linear-gradient(90deg, var(--wp-blue-gradient-light) 0%, var(--wp-green-gradient-light) 50%, var(--wp-blue-gradient-light) 100%);
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: var(--wp-green-dark);
+  color: var(--text-light);
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-speed);
+  font-family: var(--font-primary);
+}
+
+.btn:hover {
+  opacity: 0.9;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+

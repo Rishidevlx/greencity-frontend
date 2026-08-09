@@ -1,0 +1,266 @@
+.facilities-page {
+  background-color: #f2fae8;
+  min-height: 100vh;
+}
+
+/* 1. What We Do Section */
+.fac-what-we-do {
+  padding: 60px 20px 40px;
+}
+.fac-subtitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+.fac-subtitle h4 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1a2900;
+  text-transform: uppercase;
+  margin: 0;
+}
+.fac-subtitle .line {
+  width: 40px;
+  height: 2px;
+  background-color: #82cc00;
+}
+.fac-main-title {
+  font-family: 'Roboto', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  color: #82cc00;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+.fac-main-title .ampersand {
+  font-weight: 300;
+  font-size: 46px;
+}
+.fac-services-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.fac-service-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+.fac-img-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+.fac-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.fac-service-card:hover .fac-img-wrapper img {
+  transform: scale(1.1);
+}
+.fac-card-title {
+  padding: 25px 15px;
+  text-align: center;
+}
+.fac-card-title h3 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1a2900;
+  margin: 0;
+}
+
+/* 2. About Us Section */
+.fac-about-section {
+  padding: 80px 20px;
+  background-color: #fff;
+}
+.fac-about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.fac-about-label {
+  font-family: 'Raleway', sans-serif;
+  color: #82cc00;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.fac-about-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 36px;
+  font-weight: 300;
+  color: #333;
+  line-height: 1.3;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.fac-about-subtitle {
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  color: #555;
+  font-weight: 300;
+  margin-bottom: 40px;
+}
+.fac-play-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+.play-btn-wrapper {
+  width: 60px;
+  height: 60px;
+  background-color: #82cc00;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 20px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.play-text p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin: 0;
+}
+.fac-about-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.fac-about-desc {
+  font-style: italic;
+  color: #444;
+  line-height: 1.8;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+.fac-more-btn {
+  align-self: flex-start;
+  border: 1px solid #82cc00;
+  background: transparent;
+  color: #82cc00;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.fac-more-btn:hover {
+  background: #82cc00;
+  color: #fff;
+}
+
+/* 3. Parallax Banner Section */
+.fac-parallax-banner {
+  background-image: url('/uploads/2025/05/Slide10.jpg'); /* Just a guess, will look similar */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fac-parallax-overlay {
+  background: rgba(0,0,0,0.4);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 20px;
+}
+.fac-parallax-overlay h2 {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.4;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* 4. What We Did Section */
+.fac-what-we-did {
+  padding: 80px 20px;
+  background-color: #fff;
+}
+.fac-wwd-title {
+  color: #dc3545; /* Red */
+  font-size: 36px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.fac-wwd-subtitle {
+  color: #777;
+  font-style: italic;
+  margin-bottom: 50px;
+  font-size: 14px;
+}
+.fac-projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.fac-project-item {
+  text-align: center;
+}
+.fac-project-item img {
+  width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+}
+.fac-project-item h4 {
+  color: #dc3545;
+  font-weight: 700;
+  font-size: 18px;
+}
+.empty-item {
+  background: transparent;
+  border: none;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .fac-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .fac-about-grid {
+    grid-template-columns: 1fr;
+  }
+  .fac-projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .fac-services-grid {
+    grid-template-columns: 1fr;
+  }
+  .fac-parallax-overlay h2 {
+    font-size: 24px;
+  }
+  .fac-projects-grid {
+    grid-template-columns: 1fr;
+  }
+}

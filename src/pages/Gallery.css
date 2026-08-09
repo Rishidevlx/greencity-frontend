@@ -1,0 +1,247 @@
+.gallery-page {
+  width: 100%;
+}
+.gallery-header-space {
+  height: 100px;
+}
+
+/* 2. Top Image Strip */
+.gallery-top-strip {
+  width: 100%;
+  margin-bottom: 50px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+}
+.strip-images {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+.strip-images img {
+  width: calc(20% - 8px);
+  height: auto;
+  object-fit: cover;
+}
+
+/* 3. Section Headings */
+.section-heading {
+  margin-bottom: 40px;
+  padding: 0 20px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-heading h2 {
+  font-family: 'Roboto', sans-serif;
+  color: #e52034;
+  font-size: 32px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+.highlight-underline {
+  border-bottom: 4px solid #e52034;
+  padding-bottom: 5px;
+}
+.subtitle {
+  color: #ababab;
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  font-style: italic;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px rgba(19, 44, 51, 0.1);
+  margin-top: 20px;
+}
+
+/* 4. Projects Container */
+.projects-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px 60px;
+}
+
+.project-row {
+  display: grid;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+.row-3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.row-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.project-img-box {
+  position: relative;
+  text-align: center;
+}
+.project-img-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Logo Overlays */
+.logo-overlay-left, .logo-overlay-right {
+  position: absolute;
+  top: 10px;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.logo-overlay-left {
+  left: 10px;
+}
+.logo-overlay-right {
+  right: 10px;
+}
+.overlay-logo {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain;
+}
+
+/* Image Labels */
+.img-label {
+  color: #e52034;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 15px;
+  text-transform: uppercase;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .strip-images {
+    flex-wrap: wrap;
+  }
+  .strip-images img {
+    width: calc(33.33% - 10px);
+    margin-bottom: 10px;
+  }
+  .row-3-cols, .row-2-cols {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Section 2: Green City Biotech */
+.green-city-section {
+  padding: 20px 0;
+}
+
+/* Section 3: Achievements */
+.achievements-section {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+.achievements-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+.achievement-card {
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+}
+.achievement-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.achievement-desc {
+  color: #7A72E4;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+.achievement-company {
+  color: #ababab;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.read-more-btn {
+  background: transparent;
+  color: #333;
+  border: 1px solid #fdbf8e;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.read-more-btn:hover {
+  background: #fdbf8e;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Section 4: Recent Events */
+.recent-events-section {
+  padding: 40px 20px;
+}
+.events-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto 30px auto;
+}
+.event-item {
+  text-align: left;
+}
+.event-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease;
+}
+.event-item img:hover {
+  transform: scale(1.02);
+}
+.event-caption {
+  color: #66b5ff; /* Blue text as shown in screenshot */
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.agri-expo-heading {
+  text-align: center;
+  color: #8a8a8a;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 40px 0 20px 0;
+}
+
+@media (max-width: 768px) {
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
