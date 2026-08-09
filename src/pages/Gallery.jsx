@@ -9,7 +9,7 @@ const Gallery = () => {
   useEffect(() => {
     const fetchResearchFarms = async () => {
       try {
-        const res = await fetch(import.meta.env.VITE_API_URL + '/api/research-farm');
+        const res = await fetch((import.meta.env.VITE_API_URL || '') + '/api/research-farm');
         if (res.ok) {
           const data = await res.json();
           if (data && data.length > 0) {
@@ -23,7 +23,7 @@ const Gallery = () => {
 
     const fetchAchievements = async () => {
       try {
-        const res = await fetch(import.meta.env.VITE_API_URL + '/api/achievements');
+        const res = await fetch((import.meta.env.VITE_API_URL || '') + '/api/achievements');
         if (res.ok) {
           const data = await res.json();
           if (data && data.length > 0) setAchievements(data);
@@ -35,7 +35,7 @@ const Gallery = () => {
 
     const fetchRecentEvents = async () => {
       try {
-        const res = await fetch(import.meta.env.VITE_API_URL + '/api/recent-events');
+        const res = await fetch((import.meta.env.VITE_API_URL || '') + '/api/recent-events');
         if (res.ok) {
           const data = await res.json();
           if (data && data.length > 0) setRecentEvents(data);

@@ -49,7 +49,7 @@ const Products = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await fetch(import.meta.env.VITE_API_URL + '/api/products');
+        const res = await fetch((import.meta.env.VITE_API_URL || '') + '/api/products');
         if (res.ok) {
           const data = await res.json();
           if (data && data.length > 0) {

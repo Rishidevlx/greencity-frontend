@@ -35,7 +35,7 @@ const Home = () => {
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const res = await fetch(import.meta.env.VITE_API_URL + '/api/services');
+        const res = await fetch((import.meta.env.VITE_API_URL || '') + '/api/services');
         if (res.ok) {
           const data = await res.json();
           if (data && data.length > 0) {
@@ -49,12 +49,20 @@ const Home = () => {
     fetchServices();
   }, []);
 
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState([
+    { img: "/uploads/2025/05/jeevamrutham.jpg", title: "Bio-Fertilizer", subtext: "• Azospirillum • Phosopho Bacteria • KMB • ZnSB • VAM" },
+    { img: "/uploads/2025/05/bio-control-agents.jpg", title: "Bio-Control Agents", subtext: "• Pseudomonas Fluorescens • Trichoderma Viride • Bacillus substilis" },
+    { img: "/uploads/2025/06/IMG-20250609-WA0438-1.jpg", title: "Bio-Pesticide", subtext: "Green City Bio-Tech" },
+    { img: "/uploads/2025/05/enrichl-liquid-fertilizer-1.jpg", title: "Enriched Liquid & Fertilizer Organic Manure", subtext: "• Fish Amino Acid • Organic Growth Boosters • Pachakavya" },
+    { img: "/uploads/2025/05/biochar.jpg", title: "Enriched Vermicompost", subtext: "Green City Bio-Tech" },
+    { img: "/uploads/2025/05/neem-oil.jpg", title: "EM Solution & Humic Acid", subtext: "Green City Bio-Tech" },
+    { img: "/uploads/2025/05/IMG-20250516-WA0454.jpg", title: "Neem Cake", subtext: "Green City Bio-Tech" }
+  ]);
   
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await fetch(import.meta.env.VITE_API_URL + '/api/products');
+        const res = await fetch((import.meta.env.VITE_API_URL || '') + '/api/products');
         if (res.ok) {
           const data = await res.json();
           if (data && data.length > 0) {
