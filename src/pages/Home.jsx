@@ -124,7 +124,7 @@ const Home = () => {
 
       {/* 3. About Us Section */}
       <section className="about-section container">
-        <div className="about-grid">
+        <div className="about-grid mt-4">
           {/* Left Side */}
           <div className="about-left">
             <div className="section-subtitle">
@@ -162,7 +162,7 @@ const Home = () => {
       </section>
 
       {/* 4. Parallax Expert Banner */}
-      <section className="expert-parallax">
+      <section className="expert-parallax mt-4">
         <div className="parallax-overlay"></div>
         <div className="parallax-content container">
           <h2>We are Expert in Conversion of Waste to Wealth and Barren Land into Cultivable Land</h2>
@@ -354,9 +354,9 @@ const Home = () => {
       </section>
 
       {/* 11. Certifications Logos */}
-      <section className="certifications-section container">
-        <div className="cert-logos-slider">
-          <div className="cert-logos-track">
+      <section className="certifications-section container ">
+        <div className="cert-logos-slider mt-4">
+          <div className="cert-logos-track mt-4">
             {/* Duplicate the logos array twice to create a seamless infinite scroll effect */}
             {[...sliderImages, ...sliderImages].map((imgUrl, index) => (
               <img key={index} src={imgUrl} alt={`Certification Logo ${index + 1}`} />
@@ -366,8 +366,8 @@ const Home = () => {
       </section>
 
       {/* 12. Recent Events Section */}
-      <section className="recent-events-section container">
-        <div className="section-heading" style={{textAlign: 'center'}}>
+      <section className="recent-events-section container mt-4">
+        <div className="section-heading mt-4" style={{textAlign: 'center'}}>
           <h2>REC<span className="highlight-underline">ENT</span> EVENTS</h2>
           <p className="subtitle">TRY OUR NEW TASTES</p>
         </div>
