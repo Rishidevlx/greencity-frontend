@@ -10,6 +10,17 @@ const Home = () => {
 
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  const sliderImages = [
+    "https://res.cloudinary.com/dmhytkejj/image/upload/v1786286186/achievements_slider/jfvvtwxcbzxzkbv2nsjv.png",
+    "https://res.cloudinary.com/dmhytkejj/image/upload/v1786286187/achievements_slider/lehnxogqskmtxr6b7jpm.png",
+    "https://res.cloudinary.com/dmhytkejj/image/upload/v1786286188/achievements_slider/ub66td5xpnhwyab8yf4g.png",
+    "https://res.cloudinary.com/dmhytkejj/image/upload/v1786286189/achievements_slider/v74zqsjtxdspoygx7kl6.png",
+    "https://res.cloudinary.com/dmhytkejj/image/upload/v1786286190/achievements_slider/hzjhbdkmut8s6gram4xd.png",
+    "https://res.cloudinary.com/dmhytkejj/image/upload/v1786286191/achievements_slider/gltnnrjdx9ebl4sgxnwu.png",
+    "https://res.cloudinary.com/dmhytkejj/image/upload/v1786286192/achievements_slider/by6szwbnxdufdqimufs3.png",
+    "https://res.cloudinary.com/dmhytkejj/image/upload/v1786286194/achievements_slider/gelkv3ib1vnhhpwutrb5.png"
+  ];
+
   const [services, setServices] = useState([
     { title: "Hi-Tech Agri-Horti", img: "/uploads/2025/05/hi-tech-agri-horti.jpg" },
     { title: "Organic Farming", img: "/uploads/2025/05/organic-farming.jpg" },
@@ -344,21 +355,13 @@ const Home = () => {
 
       {/* 11. Certifications Logos */}
       <section className="certifications-section container">
-        <div className="cert-logos">
-          <img src="/uploads/2025/05/IMG-20250518-WA0213.jpg" alt="DPIIT Startup India" />
-          <img src="/uploads/2025/05/IMG-20250518-WA0214.jpg" alt="Coconut Development Board" />
-          <img src="/uploads/2025/05/IMG-20250518-WA0211.jpg" alt="ZED Certification" />
-          <img src="/uploads/2025/06/IMG-20250518-WA0216-removebg-preview.png" alt="APEDA" />
-        </div>
-        <div className="slider-dots mt-3">
-          <span className="dot"></span>
-          <span className="dot"></span>
-          <span className="dot"></span>
-          <span className="dot"></span>
-          <span className="dot active"></span>
-          <span className="dot"></span>
-          <span className="dot"></span>
-          <span className="dot"></span>
+        <div className="cert-logos-slider">
+          <div className="cert-logos-track">
+            {/* Duplicate the logos array twice to create a seamless infinite scroll effect */}
+            {[...sliderImages, ...sliderImages].map((imgUrl, index) => (
+              <img key={index} src={imgUrl} alt={`Certification Logo ${index + 1}`} />
+            ))}
+          </div>
         </div>
       </section>
 

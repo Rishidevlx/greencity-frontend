@@ -680,19 +680,41 @@
 .certifications-section {
   padding: 40px 20px;
   text-align: center;
+  overflow: hidden;
+  width: 100%;
 }
 
-.cert-logos {
+.cert-logos-slider {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  flex-wrap: wrap;
+  overflow: hidden;
+  width: 100%;
 }
 
-.cert-logos img {
-  max-height: 120px;
+.cert-logos-track {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  animation: scrollLogos 20s linear infinite;
+  min-width: max-content;
+}
+
+.cert-logos-track:hover {
+  animation-play-state: paused;
+}
+
+.cert-logos-track img {
+  max-height: 100px;
   object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.cert-logos-track img:hover {
+  transform: scale(1.1);
+}
+
+@keyframes scrollLogos {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-50% - 30px)); }
 }
 
 /* 12. Recent Events Section */
