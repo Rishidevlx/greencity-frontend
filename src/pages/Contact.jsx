@@ -45,8 +45,8 @@ const Contact = () => {
             <i className="far fa-envelope icon"></i>
           </div>
           <h3>CONTACT</h3>
-          <p>-------</p>
-          <p>ganapathysanthosh6066@gmail.com</p>
+          <p>gssg@gcbiplc.com</p>
+          <p>ganapathysanthosh123@gmail.com</p>
         </div>
 
         {/* Column 4 */}

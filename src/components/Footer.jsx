@@ -56,8 +56,8 @@ const Footer = () => {
             <h5>+91 98433 67360 +91 94433 67360</h5>
             <h5>+91 95852 22360</h5>
             <br />
+            <h5>gssg@gcbiplc.com</h5>
             <h5>ganapathysanthosh123@gmail.com</h5>
-            <h5>ganapathysanthosh6066@gmail.com</h5>
           </div>
         </div>
 

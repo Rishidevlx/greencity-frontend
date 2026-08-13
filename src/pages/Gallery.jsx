@@ -347,9 +347,6 @@ const Gallery = () => {
             <img src="/uploads/2025/06/IMG-20250609-WA0447.jpg" alt="Event" />
             <p className="event-caption">Meeting with VC TNAU, Coimbatore, Tamilnadu, South India.</p>
           </div>
-          <div className="event-item">
-            <img src="/uploads/2025/06/IMG-20250609-WA0444-1.jpg" alt="Agri Expo" />
-          </div>
 
           {/* Row 5 */}
           <div className="event-item">
@@ -395,10 +392,6 @@ const Gallery = () => {
           <div className="event-item">
             <img src="/uploads/2025/06/IMG-20250608-WA0038.jpg" alt="Event" />
             <p className="event-caption">Biofuels Germplasm collection on Jatropha</p>
-          </div>
-          <div className="event-item">
-            <img src="/uploads/2025/06/IMG-20250608-WA0036.jpg" alt="Event" />
-            <p className="event-caption">Betelvine Farm Visit @ Trichy</p>
           </div>
         </div>
 

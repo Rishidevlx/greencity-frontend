@@ -18,7 +18,9 @@ const Home = () => {
     "https://res.cloudinary.com/dmhytkejj/image/upload/v1786286190/achievements_slider/hzjhbdkmut8s6gram4xd.png",
     "https://res.cloudinary.com/dmhytkejj/image/upload/v1786286191/achievements_slider/gltnnrjdx9ebl4sgxnwu.png",
     "https://res.cloudinary.com/dmhytkejj/image/upload/v1786286192/achievements_slider/by6szwbnxdufdqimufs3.png",
-    "https://res.cloudinary.com/dmhytkejj/image/upload/v1786286194/achievements_slider/gelkv3ib1vnhhpwutrb5.png"
+    "https://res.cloudinary.com/dmhytkejj/image/upload/v1786286194/achievements_slider/gelkv3ib1vnhhpwutrb5.png",
+    "/coir logo.png",
+    "/FIEO logo.png"
   ];
 
   const [services, setServices] = useState([
@@ -252,42 +254,46 @@ const Home = () => {
         <h2 className="what-we-did-title">WHAT WE DID......</h2>
         <p className="what-we-did-subtitle">RECENT PROJECTS..</p>
         
-        <div className="projects-grid">
+        <div className="projects-grid-container">
           {/* Row 1 */}
-          <div className="project-item">
-            <img src="/uploads/2025/05/1-1.jpg" alt="Before" />
-            <h4>BEFORE</h4>
-          </div>
-          <div className="project-item">
-            <img src="/uploads/2025/07/1-Copy.jpg" alt="After 1.0" />
-            <h4>AFTER-1.O</h4>
-          </div>
-          <div className="project-item">
-            <img src="/uploads/2025/07/1-Copy-2-1.jpg" alt="After Planting" />
-            <h4>AFTER-Planting</h4>
+          <div className="projects-row row-3-items">
+            <div className="project-item">
+              <img src="/uploads/2025/05/1-1.jpg" alt="Before" />
+              <h4>BEFORE</h4>
+            </div>
+            <div className="project-item">
+              <img src="/uploads/2025/07/1-Copy.jpg" alt="After 1.O" />
+              <h4>AFTER-1.O</h4>
+            </div>
+            <div className="project-item">
+              <img src="/uploads/2025/07/1-Copy-2-1.jpg" alt="After Planting" />
+              <h4>AFTER-Planting</h4>
+            </div>
           </div>
 
           {/* Row 2 */}
-          <div className="project-item">
-            <img src="/uploads/2025/07/NEW-1.jpg" alt="Before" />
-            <h4>BEFORE</h4>
+          <div className="projects-row row-2-items-center">
+            <div className="project-item">
+              <img src="/uploads/2025/07/NEW-1.jpg" alt="Before" />
+              <h4>BEFORE</h4>
+            </div>
+            <div className="project-item">
+              <img src="/uploads/2025/07/NEW-2.jpg" alt="After" />
+              <h4>AFTER</h4>
+            </div>
           </div>
-          <div className="project-item">
-            <img src="/uploads/2025/07/NEW-2.jpg" alt="After" />
-            <h4>AFTER</h4>
-          </div>
-          <div className="project-item empty-item"></div>
 
           {/* Row 3 */}
-          <div className="project-item">
-            <img src="/uploads/2025/07/NEW-3.jpg" alt="Before" />
-            <h4>BEFORE</h4>
+          <div className="projects-row row-2-items-center">
+            <div className="project-item">
+              <img src="/uploads/2025/07/NEW-3.jpg" alt="Before" />
+              <h4>BEFORE</h4>
+            </div>
+            <div className="project-item">
+              <img src="/uploads/2025/07/NEW-4.jpg" alt="After Planting" />
+              <h4>AFTER-Planting</h4>
+            </div>
           </div>
-          <div className="project-item">
-            <img src="/uploads/2025/07/NEW-4.jpg" alt="After Planting" />
-            <h4>AFTER-Planting</h4>
-          </div>
-          <div className="project-item empty-item"></div>
         </div>
       </section>
 
@@ -420,9 +426,6 @@ const Home = () => {
             <img src="/uploads/2025/06/IMG-20250609-WA0447.jpg" alt="Event" />
             <p className="event-caption" style={{color: '#66b5ff', fontSize: '14px', textAlign: 'left'}}>Meeting with VC TNAU, Coimbatore, Tamilnadu, South India.</p>
           </div>
-          <div className="event-item">
-            <img src="/uploads/2025/06/IMG-20250609-WA0444-1.jpg" alt="Agri Expo" />
-          </div>
 
           {/* Row 5 */}
           <div className="event-item">
@@ -468,10 +471,6 @@ const Home = () => {
           <div className="event-item">
             <img src="/uploads/2025/06/IMG-20250608-WA0038.jpg" alt="Event" />
             <p className="event-caption" style={{color: '#66b5ff', fontSize: '14px', textAlign: 'left'}}>Biofuels Germplasm collection on Jatropha</p>
-          </div>
-          <div className="event-item">
-            <img src="/uploads/2025/06/IMG-20250608-WA0036.jpg" alt="Event" />
-            <p className="event-caption" style={{color: '#66b5ff', fontSize: '14px', textAlign: 'left'}}>Betelvine Farm Visit @ Trichy</p>
           </div>
         </div>
       </section>
