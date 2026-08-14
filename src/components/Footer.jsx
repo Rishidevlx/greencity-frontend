@@ -20,7 +20,7 @@ const Footer = () => {
             <h5>T.P.Mills Road, Rajapalayam</h5>
             <h5>Virudhunagar District</h5>
             <h5>PIN- 626 117 Tamil Nadu,</h5>
-            <h5>South India.</h5>
+            <h5>India.</h5>
           </div>
           <div className="footer-social">
             <a href="https://www.facebook.com/" className="social-icon" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a>
@@ -36,10 +36,10 @@ const Footer = () => {
             <h2>CITY OFFICE</h2>
           </div>
           <div className="footer-text">
-            <h5>Niketan Appartment</h5>
-            <h5>F2 VCS Nagar Vellakinar</h5>
-            <h5>Privu Thudiyalur</h5>
-            <h5>Coimbatore -641 029</h5>
+            <h5>F2 shree niketan Appartment</h5>
+            <h5>vrv nagar thudiyalur</h5>
+            <h5>coimbatore 641029,</h5>
+            <h5>Tamilnadu India</h5>
           </div>
         </div>
 
