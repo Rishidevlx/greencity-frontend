@@ -244,17 +244,25 @@
 .fac-project-item {
   text-align: center;
   width: calc(33.333% - 20px);
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.fac-project-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.12);
 }
 .fac-project-item img {
   width: 100%;
-  height: auto;
-  border: 1px solid #ddd;
-  margin-bottom: 15px;
-}
-.fac-project-item h4 {
-  color: #dc3545;
-  font-weight: 700;
-  font-size: 18px;
+  height: 280px;
+  object-fit: contain; /* Prevents cropping */
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  margin-bottom: 0;
+  border: none;
 }
 
 /* Responsive */

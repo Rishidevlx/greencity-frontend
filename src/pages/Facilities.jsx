@@ -81,15 +81,12 @@ const Facilities = () => {
           <div className="fac-projects-row fac-row-3-items">
             <div className="fac-project-item">
               <img src="/uploads/2025/05/1-1.jpg" alt="Before" />
-              <h4>BEFORE</h4>
             </div>
             <div className="fac-project-item">
               <img src="/uploads/2025/07/1-Copy.jpg" alt="After 1.O" />
-              <h4>AFTER-1.O</h4>
             </div>
             <div className="fac-project-item">
               <img src="/uploads/2025/07/1-Copy-2-1.jpg" alt="After Planting" />
-              <h4>AFTER-Planting</h4>
             </div>
           </div>
 
@@ -97,11 +94,9 @@ const Facilities = () => {
           <div className="fac-projects-row fac-row-2-items-center">
             <div className="fac-project-item">
               <img src="/uploads/2025/07/NEW-1.jpg" alt="Before" />
-              <h4>BEFORE</h4>
             </div>
             <div className="fac-project-item">
               <img src="/uploads/2025/07/NEW-2.jpg" alt="After" />
-              <h4>AFTER</h4>
             </div>
           </div>
 
@@ -109,11 +104,9 @@ const Facilities = () => {
           <div className="fac-projects-row fac-row-2-items-center">
             <div className="fac-project-item">
               <img src="/uploads/2025/07/NEW-3.jpg" alt="Before" />
-              <h4>BEFORE</h4>
             </div>
             <div className="fac-project-item">
               <img src="/uploads/2025/07/NEW-4.jpg" alt="After Planting" />
-              <h4>AFTER-Planting</h4>
             </div>
           </div>
         </div>
