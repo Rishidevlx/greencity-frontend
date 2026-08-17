@@ -79,33 +79,22 @@ const Gallery = () => {
           <div className="project-row row-3-cols">
             <div className="project-img-box">
               <img src="/uploads/2025/05/1-1.jpg" alt="Before" />
-              <p className="img-label">BEFORE</p>
             </div>
             <div className="project-img-box">
               <img src="/uploads/2025/06/1-Copy.jpg" alt="After 1.0" />
-              <p className="img-label">AFTER-1.O</p>
             </div>
             <div className="project-img-box">
               <img src="/uploads/2025/06/1-Copy-2.jpg" alt="After Planting" />
-              <p className="img-label">AFTER-Planting</p>
             </div>
           </div>
   
           {/* Row 2: 2 Images */}
           <div className="project-row row-2-cols">
             <div className="project-img-box">
-              <div className="logo-overlay-left">
-                 <img src="/uploads/2025/05/Picture1.png" alt="Logo" className="overlay-logo"/>
-              </div>
               <img src="/uploads/2025/05/2-1.jpg" alt="Before" />
-              <p className="img-label">BEFORE</p>
             </div>
             <div className="project-img-box">
-              <div className="logo-overlay-right">
-                 <img src="/uploads/2025/05/Picture1.png" alt="Logo" className="overlay-logo"/>
-              </div>
               <img src="/uploads/2025/05/2-1-1.jpg" alt="After" />
-              <p className="img-label">AFTER</p>
             </div>
           </div>
   
@@ -113,11 +102,9 @@ const Gallery = () => {
           <div className="project-row row-2-cols">
             <div className="project-img-box">
               <img src="/uploads/2025/05/2-2.jpg" alt="Before" />
-              <p className="img-label">BEFORE</p>
             </div>
             <div className="project-img-box">
               <img src="/uploads/2025/05/2-3.jpg" alt="After Planting" />
-              <p className="img-label">AFTER-Planting</p>
             </div>
           </div>
   
@@ -125,41 +112,29 @@ const Gallery = () => {
           <div className="project-row row-2-cols">
             <div className="project-img-box">
               <img src="/uploads/2025/05/3-1.jpg" alt="Before" />
-              <p className="img-label">BEFORE</p>
             </div>
             <div className="project-img-box">
               <img src="/uploads/2025/05/3-2.jpg" alt="After Planting" />
-              <p className="img-label">AFTER-Planting</p>
             </div>
           </div>
   
           {/* Row 5: 2 Images */}
           <div className="project-row row-2-cols">
             <div className="project-img-box">
-              <div className="logo-overlay-left">
-                 <img src="/uploads/2025/05/Picture1.png" alt="Logo" className="overlay-logo"/>
-              </div>
               <img src="/uploads/2025/05/4-1.jpg" alt="Before" />
-              <p className="img-label">BEFORE</p>
             </div>
             <div className="project-img-box">
               <img src="/uploads/2025/05/4-3.jpg" alt="After Planting" />
-              <p className="img-label">AFTER-Planting</p>
             </div>
           </div>
           
           {/* Row 6: 2 Images */}
           <div className="project-row row-2-cols">
             <div className="project-img-box">
-              <div className="logo-overlay-left">
-                 <img src="/uploads/2025/05/Picture1.png" alt="Logo" className="overlay-logo"/>
-              </div>
               <img src="/uploads/2025/05/4-4.jpg" alt="Before" />
-              <p className="img-label">BEFORE</p>
             </div>
             <div className="project-img-box">
               <img src="/uploads/2025/05/Slide10.jpg" alt="After Planting" />
-              <p className="img-label">AFTER-Planting</p>
             </div>
           </div>
 
@@ -212,10 +187,6 @@ const Gallery = () => {
           {/* Row 3: 3 Images */}
           <div className="project-row row-3-cols">
             <div className="project-img-box">
-              <div className="logo-overlay-left" style={{width: '30px', height: '30px', top: '5px', left: '5px'}}>
-                 <img src="/uploads/2025/05/Picture1.png" alt="Logo" className="overlay-logo"/>
-              </div>
-              <p style={{position: 'absolute', top: '5px', right: '10px', fontSize: '12px', fontWeight: 'bold', margin: 0}}>CHENNAI PORUR</p>
               <img src="/uploads/2025/05/Slide16.jpg" alt="Gallery" />
             </div>
             <div className="project-img-box">
